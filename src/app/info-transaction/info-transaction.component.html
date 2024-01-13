@@ -1,0 +1,23 @@
+<h2>Les informations de la Transaction</h2>
+<div>
+    <table class="table table-custom">
+      <thead>
+        <tr>
+          <th>Email de l'expéditeur</th>
+          <th>Email du bénéficiaire</th>
+          <th>Montant</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions">
+          <td>{{ transaction.senderEmail }}</td>
+          <td>{{ transaction.receiverEmail }}</td>
+          <td>{{ transaction.amount }}</td>
+          <td>{{ transaction.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  

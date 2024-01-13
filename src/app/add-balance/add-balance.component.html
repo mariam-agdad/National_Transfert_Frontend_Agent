@@ -1,0 +1,20 @@
+<h2>Ajouter balance</h2>
+<div class="div">
+   
+    <div >
+        <label >Numéro d'identité :</label>
+        <input type="text"   name="cin" [(ngModel)]="cin">
+    </div>
+    <div >
+        <label >Montant de la balance :</label>
+        <input type="number"  name="amount" [(ngModel)]="amount">
+    </div>
+
+    <div>
+        <button type="button" class="btn" (click)="onSubmit()">Ajouter Balance</button>
+     </div>
+
+    
+
+</div>
+
